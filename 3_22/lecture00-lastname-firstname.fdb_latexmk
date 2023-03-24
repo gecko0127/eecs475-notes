@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1679688238 "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" "lecture00-lastname-firstname.pdf" "lecture00-lastname-firstname" 1679688239
+["pdflatex"] 1679693561 "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" "lecture00-lastname-firstname.pdf" "lecture00-lastname-firstname" 1679693561
   "/etc/texmf/web2c/texmf.cnf" 1678577098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" 1679688238 4392 831a3daea1e123b462d0a6d2f1e9c24a ""
+  "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" 1679693561 6465 5394ce0bb97448b587b2aa2e6c38f33b ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -37,6 +37,7 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm" 1136768653 972 2c9ffac4bbd20f91c01aaef9bf3f8710 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm" 1136768653 988 098ca7e8cc5647b9ac21b82dbdce1f01 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb" 1591219423 25273 57c06ae0831a03c4eb441ef7894a1639 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb" 1570136818 16003 379767f2e95213e4cfc7bfd5823fb860 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb" 1634156854 55131 37a379baccd50ac17c5ca120b382f7a1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb" 1622581553 40420 f45498301b5afd566294a3567cb80a1d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb" 1569879884 23767 60f658096ab41f859b518103790fc331 ""
@@ -114,8 +115,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1679600397 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1679600418 2800405 357a7d880a90e748f80bb89cee06843b ""
-  "lecture00-lastname-firstname.aux" 1679688239 517 ff4f6513d32cabf21611c92433245dba "pdflatex"
-  "lecture00-lastname-firstname.tex" 1679688238 4392 831a3daea1e123b462d0a6d2f1e9c24a ""
+  "lecture00-lastname-firstname.aux" 1679693561 498 aad13660975547364e3059da3d3d101c "pdflatex"
+  "lecture00-lastname-firstname.tex" 1679693561 6465 5394ce0bb97448b587b2aa2e6c38f33b ""
   "scribe.cls" 1679597456 1153 0d72c153c617f0e82c3e58dc275ad3da ""
   (generated)
   "lecture00-lastname-firstname.aux"

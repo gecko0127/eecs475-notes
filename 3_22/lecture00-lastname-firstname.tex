@@ -23,7 +23,7 @@
 
 \section{Group Thoery}
 
-\subsection{Definition and Notation}
+\subsection{Abelian Group}
 \textbf{Definition}: $(G,\circ)$ where $\circ$ is a binary operation such that $\circ:G \times G \rightarrow G$ (we denote $\circ(g,h)$ as $g \cdot h$) is a group if:
 
 \begin{enumerate}
@@ -56,9 +56,8 @@
     \item  $(\mathbb{Z}_p^{*} \text{, } \cdot )$ (where p stands for prime) has order p-1 (from 1 to $p-1$).
 \end{itemize}
 \vspace{8mm}
-\subsection{Theorem and Corollary}
 
-\textbf{Theorem}: $G$ is a group and $m=|G|$. $\forall g \in G$, $g^m = \underbrace{(((g \circ g) \circ g) \circ g)}_{\text{m times}}=1$
+\noindent\textbf{Theorem}: $G$ is a group and $m=|G|$. $\forall g \in G$, $g^m = \underbrace{(((g \circ g) \circ g) \circ g)}_{\text{m times}}=1$
 \\\noindent\textbf{Proof}: For simplicity assume $G$ is abelian. Suppose $G = \{g_1, g_2, g_3, g_4, g_5, \dots\}$ and let $g \in G$ arbitrary.
 Because $g \cdot g_i = g \cdot g_j \Rightarrow g_i = g_j$ (multiply by $g^{-1}$), the set $\{g \cdot g_i : i \in \{1, \dots, m\}\}$ covers all elements of $G$ exactly once.
 \[g_1 \cdot g_2 \cdot g_3 \cdots g_m = (g \cdot g_1) \cdot (g \cdot g_2) \cdot (g \cdot g_3) \cdot \cdots \cdot (g \cdot g_m)\]  
@@ -67,7 +66,40 @@ Because $g \cdot g_i = g \cdot g_j \Rightarrow g_i = g_j$ (multiply by $g^{-1}$)
 \vspace{5mm}
 
 \noindent\textbf{Corollary}: Fermat's Little Theorem: $\forall \text{ prime } p \text{, } gcd(a,p)=1 \text{ and } a^{p-1} = 1 \text{ (mod p)}$
-\\\noindent\textbf{Proof}
+\vspace{3mm}
+\\\noindent\textbf{More General Theorem}: Euler's Theorem:
+\[\varphi(N) = |\{a \text{ such that } 1 \le a \le N \text{,  } gcd(a,N) =1\}| \text{,  } |\mathbb{Z}_n^{*}| = \varphi(N)\]
+\[\text{If } gcd(g,N) = 1 \text{  }\Rightarrow\text{  } g^{\varphi(N)} = 1 \text{ (mod N)}\]
+\vspace{3mm}
+\\\noindent\textbf{Corollary}: $m=|G|$, $\forall g \in G$, $\forall x \in \mathbb{Z}$. Because $g^m = 1$, $g^x = g^{x \text{ mod m}}$.
+\vspace{3mm}
+\\\noindent\textbf{Corollary}: $m = |G| > 1$, $e \in \mathbb{Z}$, $gcd(e,m) =1$. Define $d=e^{-1} \text{ (mod m)}$. Define function $f_e:G \rightarrow G$ as $f_e(g) = g^e$. Then, $f_e$ is a bijection whose inverse is $f_d$.
+\\\\\noindent\textbf{Proof}:
+\[f_d(f_e(g)) = f_d(g^e) = (g^e)^d = g^{e \cdot d} = g ^{e \cdot d \text{ (mod m)}} = g^{1} = g\]
+\vspace{8mm}
+\subsection{Cyclic Group}
+\textbf{Definition}: $G$ is cyclic if $\exists g \in G$ such that
+\[\{g^0=1, g^1, g^2,g^3, \dots, g^{m-1}\} = G\] (we say g generates G)
+% ADD CYCLE DIAGRAM
+\vspace{3mm}
+\\\noindent\textbf{Non-example}
+\[\mathbb{Z}_8^{*}=\{1,3,5,7\}\]
+\[\text{power of } 1=\{1\}\]
+\[\text{power of } 3=\{1, 3, 3^2 = 1, 3, \dots\}\]
+\[\text{power of } 5=\{1, 5, 5^2 = 1, 5, \dots \}\]
+\[\text{power of } 7=\{1, 7, 49=1, 7, \dots\}\]
+\\\noindent\textbf{Example}: $\mathbb{Z}_p^{*}$ for prime $p$
+\[\mathbb{Z}_7^{*}=\{1,2,3,4,5,6\}\]
+\[\text{power of } 3=\{1, 3, 3^2 = 2, 3^3 = 6, 3^4 = 4, 3^5 = 5, 3^6 = 1\} \Rightarrow \text{ 3 generates }\mathbb{Z}_7^{*}\]
+\[\text{power of } 2=\{1, 2, 2^2 = 4, 2^3 = 1, \dots \} \Rightarrow \text{ 2 does not generates }\mathbb{Z}_7^{*}\]
+$G^{'} \subseteq G$ is a subgroup if $(G^{'}, \cdot )$ is a group. When g does not generate $G$, it generates a subgroup.
+\textbf{Lagrange's Theorem}: If $G^{'} \subseteq G$ is a subgroup then,
+\[|G^{'}| \text{ } \bigg| \text{ } |G|\]
+\vspace{3mm}
+\textbf{Fast Exponentiation}: Suppose we have an element g. Want to compute $g^M$.
+\\Naive method: $g^{M} = \underbrace{g \cdot g \cdot g \cdots g}_{\text{M times}} = \underbrace{(((g \cdot g) \cdot g) \cdot g) \cdots}_{\text{M times}} $ %ADD EXPLANATION ABOUT WHY NOT TAKE THIS
+\\Observe:
+
 
 
 

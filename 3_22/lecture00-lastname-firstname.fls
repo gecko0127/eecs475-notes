@@ -556,9 +556,13 @@ INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplexa.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/ntxexa.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newtx/ntxexa.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txexas.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplsy.vf
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/pxsys.tfm
+INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
 INPUT lecture00-lastname-firstname.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb
