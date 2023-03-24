@@ -23,9 +23,40 @@
 
 \section{Group Thoery}
 
-\vspace{10mm}
+\textbf{Definition}: $(G,\circ)$ where $\circ$ is a binary operation such that $\circ:G \times G \rightarrow G$ (we denote $\circ(g,h)$ as $g \cdot h$) is a group if:
 
-\lipsum
+\begin{enumerate}
+    \item \textbf{Identity}: $\exists e \in G$ such that $\forall g \in G$: $e \circ g = g \circ e = g$
+    \item \textbf{Inverse}: $\forall g \in G$, $\exists g^{-1} (or -g)$ such that $g \circ g^{-1} = e$
+    \item \textbf{Associativity}: $\forall g_1, g_2, g_3 \in G$: $(g_1 \circ g_2) \circ g_3 = g_1 \circ (g_2 \circ g_3)$
+    \item \textbf{Commutativity (Abelian Group)}: $\forall g,h \in G$, $g \circ h = h \circ g$
+\end{enumerate}
+
+\noindent\textbf{Example}: $(\mathbb{Z}_n \text{, } + \text{ (mod N)})$ is an Abelian Group
+\begin{enumerate}
+    \item \textbf{Identity}: $ a + 0 \text{ (mod N)} = 0 + a \text{ (mod N)} = a \text{ mod N}$
+    \item \textbf{Inverse}: $a+ (-a) \text{ (mod N)} = 0 \text{ (mod N)}$
+    \item \textbf{Associativity}: $(a+b)+c \text{ (mod N)} = a+(b+c) \text{ (mod N)} $
+    \item \textbf{Commutativity}: $a+b \text{ (mod N)} = b+a \text{ (mod N)}$
+\end{enumerate}
+
+\noindent\textbf{Example}: $(\mathbb{Z}_n^{*} \text{, } \cdot \text{ (mod N)})$ is an Abelian Group
+\begin{enumerate}
+    \item \textbf{Identity}: $ a \cdot 1 \text{ (mod N)} = 1 \cdot a \text{ (mod N)} = a \text{ mod N}$
+    \item \textbf{Inverse}: $a \cdot (a^{-1}) \text{ (mod N)} = 1 \text{ (mod N)}$
+    \item \textbf{Associativity}: $(a \cdot b)\cdot c \text{ (mod N)} = a \cdot (b \cdot c) \text{ (mod N)} $
+    \item \textbf{Commutativity}: $a \cdot b \text{ (mod N)} = b \cdot a \text{ (mod N)}$
+\end{enumerate}
+\indent *Note: If $a,b \in \mathbb{Z}_n^{*}$, we never get $a \cdot b=0 \text{ (mod N)}$.
+\vspace{5mm}
+\\\noindent\textbf{Notation}: $|G|$: group order.
+
+
+
+
+
+
+\lipsum{}
 
 %=============================================================================
 %=============================================================================
