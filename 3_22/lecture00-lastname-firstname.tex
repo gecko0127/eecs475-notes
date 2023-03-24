@@ -23,6 +23,7 @@
 
 \section{Group Thoery}
 
+\subsection{Definition and Notation}
 \textbf{Definition}: $(G,\circ)$ where $\circ$ is a binary operation such that $\circ:G \times G \rightarrow G$ (we denote $\circ(g,h)$ as $g \cdot h$) is a group if:
 
 \begin{enumerate}
@@ -43,13 +44,32 @@
 \noindent\textbf{Example}: $(\mathbb{Z}_n^{*} \text{, } \cdot \text{ (mod N)})$ is an Abelian Group
 \begin{enumerate}
     \item \textbf{Identity}: $ a \cdot 1 \text{ (mod N)} = 1 \cdot a \text{ (mod N)} = a \text{ mod N}$
-    \item \textbf{Inverse}: $a \cdot (a^{-1}) \text{ (mod N)} = 1 \text{ (mod N)}$
+    \item \textbf{Inverse}: $a \cdot (a^{-1}) \text{ (mod N)} = 1 \text{ (mod N)}$  $\rightarrow$  a and $a^{-1}$ are coprime.
     \item \textbf{Associativity}: $(a \cdot b)\cdot c \text{ (mod N)} = a \cdot (b \cdot c) \text{ (mod N)} $
     \item \textbf{Commutativity}: $a \cdot b \text{ (mod N)} = b \cdot a \text{ (mod N)}$
 \end{enumerate}
-\indent *Note: If $a,b \in \mathbb{Z}_n^{*}$, we never get $a \cdot b=0 \text{ (mod N)}$.
+\indent *Note: If $a,b \in \mathbb{Z}_n^{*}$, we never get $a \cdot b=0 \text{ (mod N)}$. We have numbers in the group as always.
 \vspace{5mm}
-\\\noindent\textbf{Notation}: $|G|$: group order.
+\\\noindent\textbf{Notation}: $|G|$: group order. 
+\begin{itemize}
+    \item  $(\mathbb{Z}_n \text{, } + )$ has order N
+    \item  $(\mathbb{Z}_p^{*} \text{, } \cdot )$ (where p stands for prime) has order p-1 (from 1 to $p-1$).
+\end{itemize}
+\vspace{8mm}
+\subsection{Theorem and Corollary}
+
+\textbf{Theorem}: $G$ is a group and $m=|G|$. $\forall g \in G$, $g^m = \underbrace{(((g \circ g) \circ g) \circ g)}_{\text{m times}}=1$
+\\\noindent\textbf{Proof}: For simplicity assume $G$ is abelian. Suppose $G = \{g_1, g_2, g_3, g_4, g_5, \dots\}$ and let $g \in G$ arbitrary.
+Because $g \cdot g_i = g \cdot g_j \Rightarrow g_i = g_j$ (multiply by $g^{-1}$), the set $\{g \cdot g_i : i \in \{1, \dots, m\}\}$ covers all elements of $G$ exactly once.
+\[g_1 \cdot g_2 \cdot g_3 \cdots g_m = (g \cdot g_1) \cdot (g \cdot g_2) \cdot (g \cdot g_3) \cdot \cdots \cdot (g \cdot g_m)\]  
+\[g_1 \cdot g_2 \cdot g_3 \cdots g_m = g^{m} \cdot (g_1 \cdot g_2 \cdot g_3 \cdots g_m)\]
+\[ 1 = g^{m}\]
+\vspace{5mm}
+
+\noindent\textbf{Corollary}: Fermat's Little Theorem: $\forall \text{ prime } p \text{, } gcd(a,p)=1 \text{ and } a^{p-1} = 1 \text{ (mod p)}$
+\\\noindent\textbf{Proof}
+
+
 
 
 
