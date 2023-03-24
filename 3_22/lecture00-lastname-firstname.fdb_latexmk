@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1679693561 "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" "lecture00-lastname-firstname.pdf" "lecture00-lastname-firstname" 1679693561
+["pdflatex"] 1679696207 "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" "lecture00-lastname-firstname.pdf" "lecture00-lastname-firstname" 1679696208
   "/etc/texmf/web2c/texmf.cnf" 1678577098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" 1679693561 6465 5394ce0bb97448b587b2aa2e6c38f33b ""
+  "/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex" 1679696207 7457 abbcda294b668d4bc859f887aa25cf2a ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -115,8 +115,8 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1679600397 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1679600418 2800405 357a7d880a90e748f80bb89cee06843b ""
-  "lecture00-lastname-firstname.aux" 1679693561 498 aad13660975547364e3059da3d3d101c "pdflatex"
-  "lecture00-lastname-firstname.tex" 1679693561 6465 5394ce0bb97448b587b2aa2e6c38f33b ""
+  "lecture00-lastname-firstname.aux" 1679696208 498 e753b253545b408ac9e7a5a2bae1904c "pdflatex"
+  "lecture00-lastname-firstname.tex" 1679696207 7457 abbcda294b668d4bc859f887aa25cf2a ""
   "scribe.cls" 1679597456 1153 0d72c153c617f0e82c3e58dc275ad3da ""
   (generated)
   "lecture00-lastname-firstname.aux"

@@ -98,7 +98,15 @@ $G^{'} \subseteq G$ is a subgroup if $(G^{'}, \cdot )$ is a group. When g does n
 \vspace{3mm}
 \textbf{Fast Exponentiation}: Suppose we have an element g. Want to compute $g^M$.
 \\Naive method: $g^{M} = \underbrace{g \cdot g \cdot g \cdots g}_{\text{M times}} = \underbrace{(((g \cdot g) \cdot g) \cdot g) \cdots}_{\text{M times}} $ %ADD EXPLANATION ABOUT WHY NOT TAKE THIS
-\\Observe:
+\\Observe: $g^{2^{m}} = g^{2^{m-1}} \cdot g^{2^{m-1}} = (g^{2^{m-1}})^2$ 
+\\\\If $M=2^m$, 
+\[ g, g^2, g^4, g^8, g^{16}, \dots \]
+How many operations we perform in this case? $T(M)$
+\[T(M) = T(\frac{M}{2}) +1 \Rightarrow T(M) = \log{M} = M\] which is efficient
+\\In general, $M = \sum_{i=0}^{l}m_i \cdot 2^{i}$. We get $g^{M} = \prod_{i=0}^{l} g^{2^{i}}$ by applying the trick above for each $g^{2^{i}}$. If $M$ is $l$ bits long, there are $O(l^2)$ multiplications altogether.
+\vspace{5mm}
+\\\noindent\textbf{Corollary}: Fast exponentiation allows us to compute inverses very fast because $g^{-1} = g^{|G|-1}$ (since $g^{|G|} = 1$). However, for $\mathbb{Z}_p^{*}$, we have a faster method: Extended Euclidean.
+\\We now know how to compute $g^m$ from $g$ efficiently. Do we know how to compute $m$ from $g^m$? Discrete log: $m="log" g^m$ is conjectured to be extremely difficult. We use the difficulty in calculating this discrete log on constructing the \textbf{Diffie Hellman key exchange} mechanism.
 
 
 
@@ -108,7 +116,7 @@ $G^{'} \subseteq G$ is a subgroup if $(G^{'}, \cdot )$ is a group. When g does n
 
 
 
-\lipsum{}
+%\lipsum{}
 
 %=============================================================================
 %=============================================================================
