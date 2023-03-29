@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  24 MAR 2023 18:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  29 MAR 2023 12:44
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex
-(/home/yiwent/eecs475/notes/3_22/lecture00-lastname-firstname.tex
+**/home/yiwent/eecs475/notes/lecture12/lecture12-Tseng-Yi-Wen.tex
+(/home/yiwent/eecs475/notes/lecture12/lecture12-Tseng-Yi-Wen.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./scribe.cls
 Document Class: scribe 2022/09/01 Template for 2022-2023 scribe notes
@@ -349,115 +349,182 @@ Package: lipsum 2021-09-20 v2.7 150 paragraphs of Lorem Ipsum dummy text
 \l__lipsum_b_int=\count289
  (/usr/share/texlive/texmf-dist/tex/latex/lipsum/lipsum.ltd.tex))
 \c@lecture=\count290
+) (/usr/share/texlive/texmf-dist/tex/latex/float/float.sty
+Package: float 2001/11/08 v1.3d Float enhancements (AL)
+\c@float@type=\count291
+\float@exts=\toks35
+\float@box=\box61
+\@float@everytoks=\toks36
+\@floatcapt=\box62
 )
-LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 14.
+LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) (./lecture00-lastname-firstname.aux)
-\openout1 = `lecture00-lastname-firstname.aux'.
+) (./lecture12-Tseng-Yi-Wen.aux)
+\openout1 = `lecture12-Tseng-Yi-Wen.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 14.
-LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 14.
+LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 15.
+LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/omlnpxmi.fd
 File: omlnpxmi.fd 2013/03/21 Fontinst v1.933 font definitions for OML/npxmi.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for U+npxexa on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 15.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for U/npxexa/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for U+npxexa on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxexa.fd
 File: unpxexa.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxexa.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for LMS/npxsy/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for LMS+npxsy on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmsnpxsy.fd
 File: lmsnpxsy.fd 2016/07/04 Fontinst v1.933 font definitions for LMS/npxsy.
 )
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
+LaTeX Font Info:    Checking defaults for LMX/npxexx/m/n on input line 15.
+LaTeX Font Info:    Trying to load font information for LMX+npxexx on input line 15.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/lmxnpxexx.fd
 File: lmxnpxexx.fd 2016/07/04 Fontinst v1.933 font definitions for LMX/npxexx.
 )
-LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    ... okay on input line 15.
  (/usr/share/texlive/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
 [Loading MPS to PDF converter (version 2006.09.02).]
-\scratchcounter=\count291
+\scratchcounter=\count292
 \scratchdimen=\dimen157
-\scratchbox=\box61
-\nofMPsegments=\count292
-\nofMParguments=\count293
-\everyMPshowfont=\toks35
-\MPscratchCnt=\count294
+\scratchbox=\box63
+\nofMPsegments=\count293
+\nofMParguments=\count294
+\everyMPshowfont=\toks37
+\MPscratchCnt=\count295
 \MPscratchDim=\dimen158
-\MPnumerator=\count295
-\makeMPintoPDFobject=\count296
-\everyMPtoPDFconversion=\toks36
+\MPnumerator=\count296
+\makeMPintoPDFobject=\count297
+\everyMPtoPDFconversion=\toks38
 ) (/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty
 Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
 ))
-LaTeX Font Info:    Trying to load font information for U+msa on input line 27.
+<ctr.jpg, id=1, 793.96625pt x 221.82875pt>
+File: ctr.jpg Graphic file (type jpg)
+<use ctr.jpg>
+Package pdftex.def Info: ctr.jpg  used on input line 26.
+(pdftex.def)             Requested size: 375.80544pt x 105.0008pt.
+LaTeX Font Info:    Trying to load font information for U+msa on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Trying to load font information for U+msb on input line 27.
+LaTeX Font Info:    Trying to load font information for U+msb on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 27.
+LaTeX Font Info:    Trying to load font information for U+npxmia on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
 File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 27.
+LaTeX Font Info:    Trying to load font information for U+npxsym on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
 File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
 )
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 27.
+LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 29.
  (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
 File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
-) [1
+)
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 55.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 29--34
+
+ []
+
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 35.
+(/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 72--78
+<ofb.jpg, id=2, 859.21pt x 221.82875pt>
+File: ofb.jpg Graphic file (type jpg)
+<use ofb.jpg>
+Package pdftex.def Info: ofb.jpg  used on input line 46.
+(pdftex.def)             Requested size: 375.80544pt x 97.02612pt.
+ [1
 
- []
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./ctr.jpg>]
+<ecb.jpg, id=13, 593.21625pt x 211.79124pt>
+File: ecb.jpg Graphic file (type jpg)
+<use ecb.jpg>
+Package pdftex.def Info: ecb.jpg  used on input line 65.
+(pdftex.def)             Requested size: 375.80544pt x 134.1757pt.
 
-[2]
-Underfull \hbox (badness 10000) in paragraph at lines 97--103
 
- []
+/home/yiwent/eecs475/notes/lecture12/lecture12-Tseng-Yi-Wen.tex:69: LaTeX Error: There's no line here to end.
 
-[3] (./lecture00-lastname-firstname.aux) ) 
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \\
+        \textcolor{red}{This encryption mode is not secure}.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+/home/yiwent/eecs475/notes/lecture12/lecture12-Tseng-Yi-Wen.tex:69: LaTeX Error: There's no line here to end.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 \\ \textcolor
+                  {red}{This encryption mode is not secure}.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+[2 <./ofb.jpg> <./ecb.jpg>]
+<figure4.png, id=17, 600.2425pt x 253.94875pt>
+File: figure4.png Graphic file (type png)
+<use figure4.png>
+Package pdftex.def Info: figure4.png  used on input line 80.
+(pdftex.def)             Requested size: 234.8775pt x 99.36897pt.
+<cbc.jpg, id=18, 763.85374pt x 211.79124pt>
+File: cbc.jpg Graphic file (type jpg)
+<use cbc.jpg>
+Package pdftex.def Info: cbc.jpg  used on input line 118.
+(pdftex.def)             Requested size: 375.80544pt x 104.19873pt.
+ [3 <./figure4.png (PNG copy)>]
+<cbc2.jpg, id=24, 668.4975pt x 221.82875pt>
+File: cbc2.jpg Graphic file (type jpg)
+<use cbc2.jpg>
+Package pdftex.def Info: cbc2.jpg  used on input line 130.
+(pdftex.def)             Requested size: 375.80544pt x 124.70726pt.
+ [4 <./cbc.jpg> <./cbc2.jpg>] [5] (./lecture12-Tseng-Yi-Wen.aux) ) 
 Here is how much of TeX's memory you used:
- 7256 strings out of 478287
- 106071 string characters out of 5849289
- 485600 words of memory out of 5000000
- 25304 multiletter control sequences out of 15000+600000
- 496028 words of font info for 100 fonts, out of 8000000 for 9000
+ 7421 strings out of 478287
+ 108552 string characters out of 5849289
+ 483958 words of memory out of 5000000
+ 25460 multiletter control sequences out of 15000+600000
+ 510268 words of font info for 135 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 83i,9n,91p,386b,166s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexas.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on lecture00-lastname-firstname.pdf (3 pages, 90375 bytes).
+ 83i,8n,91p,533b,304s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txexs.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplri8a.pfb>
+Output written on lecture12-Tseng-Yi-Wen.pdf (5 pages, 428789 bytes).
 PDF statistics:
- 60 PDF objects out of 1000 (max. 8388607)
- 36 compressed objects within 1 object stream
+ 62 PDF objects out of 1000 (max. 8388607)
+ 34 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
