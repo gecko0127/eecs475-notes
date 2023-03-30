@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1680195862 "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" "lecture22-Tseng-Yiwen.pdf" "lecture22-Tseng-Yiwen" 1680195863
+["pdflatex"] 1680219062 "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" "lecture22-Tseng-Yiwen.pdf" "lecture22-Tseng-Yiwen" 1680219062
   "/etc/texmf/web2c/texmf.cnf" 1678577098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" 1680195862 6382 c1f158e6c9b974c476203e7dc915fc0b ""
+  "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" 1680219061 6743 92fbd10a0f5bdf0d54a4da0a74194e10 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -137,6 +137,7 @@
   "/usr/share/texlive/texmf-dist/tex/latex/chemarrow/chemarrow.sty" 1137109974 8135 4b9fa3dda90380c4ed7986dbff3f44a0 ""
   "/usr/share/texlive/texmf-dist/tex/latex/epstopdf-pkg/epstopdf-base.sty" 1579991033 13886 d1306dcf79a944f6988e688c1785f9ce ""
   "/usr/share/texlive/texmf-dist/tex/latex/etoolbox/etoolbox.sty" 1601931149 46845 3b58f70c6e861a13d927bff09d35ecbc ""
+  "/usr/share/texlive/texmf-dist/tex/latex/float/float.sty" 1137110151 6749 16d2656a1984957e674b149555f1ea1d ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/color.cfg" 1459978653 1213 620bba36b25224fa9b7e1ccb4ecb76fd ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-cfg/graphics.cfg" 1465944070 1224 978390e9c2234eab29404bc21b268d1e ""
   "/usr/share/texlive/texmf-dist/tex/latex/graphics-def/pdftex.def" 1601931164 19103 48d29b6e2a64cb717117ef65f107b404 ""
@@ -184,9 +185,12 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1644012257 39432 7155514e09a3d69036fac785183a21c2 ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1679600397 4379155 98693266ff65f58d9f98aff394de12d2 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1679600418 2800405 357a7d880a90e748f80bb89cee06843b ""
-  "lecture22-Tseng-Yiwen.aux" 1680195863 295 723b43e27b1e331d7e7a358af23137b9 "pdflatex"
-  "lecture22-Tseng-Yiwen.tex" 1680195862 6382 c1f158e6c9b974c476203e7dc915fc0b ""
-  "scribe.cls" 1680195313 1300 8ea884e87fd248b162f9a71214d41917 ""
+  "cpa.jpg" 1680213763 84329 068ba577b0a3c42100abf347a49214b8 ""
+  "elg.jpg" 1680220142 84893 998b70026e19048843dade4a7ed76d6a ""
+  "lecture22-Tseng-Yiwen.aux" 1680219062 720 619b28b702fb65462d462decd86fa165 "pdflatex"
+  "lecture22-Tseng-Yiwen.tex" 1680219061 6743 92fbd10a0f5bdf0d54a4da0a74194e10 ""
+  "scribe.cls" 1680215238 1320 4031321d52b2d18e27baf683df09d267 ""
+  "second.jpg" 1680214965 10339 b4598fbe3ed1c8f4fbff525999c07f0e ""
   (generated)
   "lecture22-Tseng-Yiwen.aux"
   "lecture22-Tseng-Yiwen.log"

@@ -36,9 +36,12 @@ Image a many-query attacker $A$ that makes up to q queries where $q \in poly(n)$
 \noindent Note here, the only difference between $Hybrid(i-1)$ and $Hybrid(i)$ is how the $i^{th}$ query is answered. 
 \\
 Now, we build a "simulator" $S_i^{LR_{pk,b}(.,.)}(pk)$ that gets \textbf{one query} and simulates either $Hybrid(i-1)$ or $Hybrid(i)$ depending on b.
-% ADD A GRAPH
 \\
-\\
+\begin{figure}[H]
+\includegraphics[scale=0.2]{cpa.jpg}
+\caption{Simulator Model}
+\end{figure}
+
 On $j^{th}$ query of A $(m_0^j,m_1^j)$:
 \begin{itemize}
     \item If $j<i$, $S_i$ runs $c \leftarrow Enc_{pk}(m_1^j)$
@@ -60,9 +63,14 @@ Adv_{\pi}^{CPA}(A) = \big|Pr(A=1\text{ in } Hybrid(0)) - Pr(A=1\text{ in } Hybri
 \end{multline*}
 \\
 The theorem implies we can encrypt long messages bit-by-bit (or block-by-block) or broken up in any other many calls on "short" messages, which is acceptable by the theorem.
-% ADD GRAPH
-\vspace{5mm}
 \\
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.2]{second.jpg}
+    \caption{Block-by-block encryption}
+\end{figure}
+\vspace{5mm}
+
 \textbf{Theorem}: Any public key encryption scheme wit deterministic $Enc_{pk}(.)$ can not be CPA secure \textbf{even for 1 query}.
 \\
 \textbf{Proof}: query $c \leftarrow LR_{pk,b}(m_0,m_1)$ for any $m_0 \neq m_1$. Then, run $c' = Enc_{pk}(m_0)$. If $c=c'$ outputs 0, else 1. Because the adversary knows the query $(m_0,m_1)$, the adversary has perfect advantage on distinguishing $c$ and $c'$.
@@ -101,10 +109,14 @@ Theorem: if DDH holds for $G$, then El Ganal is CPA-secure.
 \\
 Proof: Let $A$ be any feasible p.p.t attacker against El Ganal. Use A to construct the distinguisher against DDH.
 \\\\
-%ADD THE GRAPH
+\begin{figure}[H]
+    \centering
+    \includegraphics[scale=0.2]{elg.jpg}
+    \caption{Use the attacker against El Ganal to construct the distinguisher against DDH}
+\end{figure}
 If $(g,A,B,C)$ is a DH tuple ("real world"), D perfectly simulates the left CPA world because $C=g^{ab}$.
 \\
-Ideal world: $(g,A,B,C)$ is randomthen $D$ perfectly simulates a "hybrid" CPA world where the ciphertext is two independent random-group elements (regardless if message).
+Ideal world: $(g,A,B,C)$ is random then $D$ perfectly simulates a "hybrid" CPA world where the ciphertext is two independent random-group elements (regardless if message).
 \\
 Symmetrically, we can construct $D'$ vs DDH that replies A with $(B,m_1 \cdot C)$
 \[Adv^{CPA}(A) \le Adv^{DDH}(D) + Adv^{DDH}(D') = negl(n)+negl(n) = negl(n)\]

@@ -18,6 +18,8 @@
 \RequirePackage{chemarrow}
 \usepackage{tikz}
 \usetikzlibrary{shapes, calc}
+\usepackage{float}
+
 
 \newcounter{lecture}
 \newcommand{\lectureTitle}{Lecture Title Here}
