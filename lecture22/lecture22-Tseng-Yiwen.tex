@@ -100,7 +100,14 @@ We can look at El Gamal Cryptosystem interms of $(Gen, Enc, Dec):$
 Theorem: if DDH holds for $G$, then El Ganal is CPA-secure.
 \\
 Proof: Let $A$ be any feasible p.p.t attacker against El Ganal. Use A to construct the distinguisher against DDH.
-
+\\\\
+%ADD THE GRAPH
+If $(g,A,B,C)$ is a DH tuple ("real world"), D perfectly simulates the left CPA world because $C=g^{ab}$.
+\\
+Ideal world: $(g,A,B,C)$ is randomthen $D$ perfectly simulates a "hybrid" CPA world where the ciphertext is two independent random-group elements (regardless if message).
+\\
+Symmetrically, we can construct $D'$ vs DDH that replies A with $(B,m_1 \cdot C)$
+\[Adv^{CPA}(A) \le Adv^{DDH}(D) + Adv^{DDH}(D') = negl(n)+negl(n) = negl(n)\]
 \vspace{10mm}
 
 %\lipsum
