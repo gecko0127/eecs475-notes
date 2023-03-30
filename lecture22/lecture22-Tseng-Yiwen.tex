@@ -1,0 +1,93 @@
+\documentclass{scribe}
+
+%====================================================================
+%====================================================================
+% IMPORTANT: PLEASE UPDATE THE LECTURE INFORMATION BELOW:
+\setcounter{lecture}{22} % Lecture number here, from The Big Table on Canvas
+\renewcommand{\lectureTitle}{CPA security continued, El Gamal cryptosystem}
+\renewcommand{\lecturer}{Mahdi Cheraghchi}
+\renewcommand{\scribe}{Yi-Wen Tseng}
+\renewcommand{\lectureDate}{March 29, 2023} % Date of the lecture
+%====================================================================
+%====================================================================
+
+\begin{document}
+
+\maketitle
+
+%=============================================================================
+%=============================================================================
+
+\section{CPA Security}
+In continuation of the previous class, we want to show that one-query CPA implies many-query CPA.
+\\\\
+Image a many-query attacker $A$ that makes up to q queries where $q \in poly(n)$. Consider the following worlds:
+\\
+\begin{description}
+\item [Hybrid 0 (Left World)]: all queries $(m_0,m_1)$ to the LR oracle are answered by $c \leftarrow Enc_{pk}(m_0)$.
+
+\item [Hybrid 1]: First query $(m_0,m_1)$ to the LR oracle is answered by $c \leftarrow Enc_{pk}(m_1)$, then $c \leftarrow Enc_{pk}(m_0)$ thereafter.
+
+\item [Hybrid 2]: First 2 queries $(m_0,m_1)$ to the LR oracle are answered by $c \leftarrow Enc_{pk}(m_1)$, then $c \leftarrow Enc_{pk}(m_0)$ thereafter.
+\item $\vdots$
+\item [Hybrid q (Right World)]: all queries $(m_0,m_1)$ to the LR oracle are answered by $c \leftarrow Enc_{pk}(m_1)$.
+\end{description}
+
+\noindent Note here, the only difference between $Hybrid(i-1)$ and $Hybrid(i)$ is how the $i^{th}$ query is answered. 
+\\
+Now, we build a "simulator" $S_i^{LR_{pk,b}(.,.)}(pk)$ that gets \textbf{one query} and simulates either $Hybrid(i-1)$ or $Hybrid(i)$ depending on b.
+% ADD A GRAPH
+\\
+\\
+On $j^{th}$ query of A $(m_0^j,m_1^j)$:
+\begin{itemize}
+    \item If $j<i$, $S_i$ runs $c \leftarrow Enc_{pk}(m_1^j)$
+    \item If $j>i$, $S_i$ runs $c \leftarrow Enc_{pk}(m_0^j)$
+    \item If $j=i$, $S_i$ queries to LR oracle and gives the result to $A$
+\end{itemize}
+\begin{equation}
+\begin{cases}
+    S_i\text{ is in the left world }(b=0)\text{, then we perfectly simulate }Hybrid(i-1) \\
+    S_i\text{ is in the right world }(b=1)\text{, then we perfectly simulate }Hybrid(i)
+\end{cases}
+\end{equation}
+By triangle inequality,
+\begin{multline*}
+Adv_{\pi}^{CPA}(A) = \big|Pr(A=1\text{ in } Hybrid(0)) - Pr(A=1\text{ in } Hybrid(q)) \big|\\
+= \big|Pr(A=1\text{ in } Hybrid(0)) - Pr(A=1\text{ in } Hybrid(1)) + Pr(A=1\text{ in } Hybrid(1)) \\
+-Pr(A=1\text{ in } Hybrid(2)) + Pr(A=1\text{ in } Hybrid(2)) \dots -Pr(A=1\text{ in } Hybrid(q)) \big|\\
+\le \sum_{i=1}^{q} Adv_{\pi}^{single-CPA}(S_i) = q \dot negl(n) = negl(n)
+\end{multline*}
+\\
+The theorem implies we can encrypt long messages bit-by-bit (or block-by-block) or broken up in any other many calls on "short" messages, which is acceptable by the theorem.
+% ADD GRAPH
+\vspace{5mm}
+\\
+\textbf{Theorem}: Any public key encryption scheme wit deterministic $Enc_{pk}(.)$ can not be CPA secure \textbf{even for 1 query}.
+\\
+\textbf{Proof}: query $c \leftarrow LR_{pk,b}(m_0,m_1)$ for any $m_0 \neq m_1$. Then, run $c' = Enc_{pk}(m_0)$. If $c=c'$ outputs 0, else 1. Because the adversary knows the query $(m_0,m_1)$, the adversary has perfect advantage on distinguishing $c$ and $c'$.
+
+\vspace{10mm}
+
+%=============================================================================
+%=============================================================================
+
+\section{El Gamal Cryptosystem}
+El Gamal is the public key encryption version of Diffie Hellmen. It works as follows:
+
+
+\vspace{10mm}
+
+%\lipsum
+
+%=============================================================================
+%=============================================================================
+
+\bibliographystyle{alpha}
+% Uncomment below if you have any references:
+%\bibliography{\jobname}
+
+%=============================================================================
+%=============================================================================
+
+\end{document}
