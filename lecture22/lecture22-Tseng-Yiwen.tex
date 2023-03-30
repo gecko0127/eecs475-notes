@@ -74,7 +74,32 @@ The theorem implies we can encrypt long messages bit-by-bit (or block-by-block) 
 
 \section{El Gamal Cryptosystem}
 El Gamal is the public key encryption version of Diffie Hellmen. It works as follows:
+$$ Alice \;\autorightleftharpoons{$A=g^a \in G$}{$B=g^b \in G$}\; Bob $$
+$$ \text{choose random a }\leftarrow Z_q \;\hspace{3cm}\; \text{choose random }b \leftarrow Z_q $$
+$$ K = B^a = g^{ab\text{ mod}q} \in G \;\hspace{3cm}\; K = A^b = g^{ba\text{ mod}q} \in G $$
 
+where $G$ is a group of order $q$ and $g$ is the generator of $G$.
+\\\\
+$K$  is the secret key derived by two parties. We use the properties of cyclic group to get random number with multiplication.
+\\\\
+We can look at El Gamal Cryptosystem interms of $(Gen, Enc, Dec):$
+\\
+\textbf{Idea}: Basically, message is $M \in G$, the "one-time-pad effect" would involve multiplying $M$ wih something random $K$. 
+\begin{itemize} 
+    \item $Gen(1^n)$: choose random a $\leftarrow Z_q $ output $(pk=A=g^a \in G, sk=a) \Leftarrow$ at Alice computes\\
+    \item $Enc(pk=A,M \in G)$: choose random $b \leftarrow Z_q$ output ciphertext $(B = g^b \in G, C = M \cdot A^b \in G) \Leftarrow $ what Bob computes
+    \item $Dec(sk=a,(B,C))$: compute $K=B^a$, output $C \cdot K^{-1} \in G$
+\end{itemize}
+\textbf{Correctness}: $\forall M \in G$\text{, }$(pk=g^a,sk=a)$
+\[Enc(pk,A) = (B = g^b, C = M \cdot (g^a)^b)\]
+\[Dec(B,C) = C \cdot (B^a)^{-1} = M \cdot g^{ab} \cdot (g^{(ab)})^{-1} = M\]
+\vspace{5mm}
+\\
+\noindent\textbf{CPA Security}: Based on the DDH asssumption over $G: (g,g^a,g^b,g^{ab}) \in G^4$, where $a,b \leftarrow Z_q$, is indistinguishable from $(g,g^a,g^b,g^{c}) \in G^4$, where $a,b,c \leftarrow Z_q$.
+\\\\
+Theorem: if DDH holds for $G$, then El Ganal is CPA-secure.
+\\
+Proof: Let $A$ be any feasible p.p.t attacker against El Ganal. Use A to construct the distinguisher against DDH.
 
 \vspace{10mm}
 

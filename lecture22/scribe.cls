@@ -15,6 +15,9 @@
 \RequirePackage{verbatim}
 \RequirePackage{newpxmath}
 \RequirePackage{lipsum}
+\RequirePackage{chemarrow}
+\usepackage{tikz}
+\usetikzlibrary{shapes, calc}
 
 \newcounter{lecture}
 \newcommand{\lectureTitle}{Lecture Title Here}
