@@ -1,7 +1,7 @@
 # Fdb version 3
-["pdflatex"] 1680219062 "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" "lecture22-Tseng-Yiwen.pdf" "lecture22-Tseng-Yiwen" 1680219062
+["pdflatex"] 1680526887 "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" "lecture22-Tseng-Yiwen.pdf" "lecture22-Tseng-Yiwen" 1680526888
   "/etc/texmf/web2c/texmf.cnf" 1678577098 475 c0e671620eb5563b2130f56340a5fde8 ""
-  "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" 1680219061 6743 92fbd10a0f5bdf0d54a4da0a74194e10 ""
+  "/home/yiwent/eecs475/notes/lecture22/lecture22-Tseng-Yiwen.tex" 1680526886 6743 92fbd10a0f5bdf0d54a4da0a74194e10 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc" 1165713224 4850 80dc9bab7f31fb78a000ccfed0e27cab ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplb7t.tfm" 1136768653 1616 371d1ee60c04b008c8fd760060cd34f1 ""
@@ -187,8 +187,8 @@
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1679600418 2800405 357a7d880a90e748f80bb89cee06843b ""
   "cpa.jpg" 1680213763 84329 068ba577b0a3c42100abf347a49214b8 ""
   "elg.jpg" 1680220142 84893 998b70026e19048843dade4a7ed76d6a ""
-  "lecture22-Tseng-Yiwen.aux" 1680219062 720 619b28b702fb65462d462decd86fa165 "pdflatex"
-  "lecture22-Tseng-Yiwen.tex" 1680219061 6743 92fbd10a0f5bdf0d54a4da0a74194e10 ""
+  "lecture22-Tseng-Yiwen.aux" 1680526888 720 619b28b702fb65462d462decd86fa165 "pdflatex"
+  "lecture22-Tseng-Yiwen.tex" 1680526886 6743 92fbd10a0f5bdf0d54a4da0a74194e10 ""
   "scribe.cls" 1680215238 1320 4031321d52b2d18e27baf683df09d267 ""
   "second.jpg" 1680214965 10339 b4598fbe3ed1c8f4fbff525999c07f0e ""
   (generated)
