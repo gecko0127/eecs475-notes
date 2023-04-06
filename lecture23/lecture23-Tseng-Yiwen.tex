@@ -1,0 +1,50 @@
+\documentclass{scribe}
+
+%====================================================================
+%====================================================================
+% IMPORTANT: PLEASE UPDATE THE LECTURE INFORMATION BELOW:
+\setcounter{lecture}{23} % Lecture number here, from The Big Table on Canvas
+\renewcommand{\lectureTitle}{RSA function and RSA encryption}
+\renewcommand{\lecturer}{Mahdi Cheraghchi}
+\renewcommand{\scribe}{Yi-Wen Tseng}
+\renewcommand{\lectureDate}{April 3, 2023} % Date of the lecture
+%====================================================================
+%====================================================================
+
+\begin{document}
+
+\maketitle
+
+%=============================================================================
+%=============================================================================
+
+\section{RSA Function}
+In general public key encryption relies on some computational hardness for secure:
+\begin{itemize}
+    \item \textbf{Diffie-Hellman}: rely on the hardness of discrete log (finding an \textbf{unknown exponent} $a$ givne $g^a$) in a group of \textbf{known} order
+    \item \textbf{RSA}: rely on the hardness of factoring and finding roots (finding \textbf{unkonwn base} but known exponent) in a group of \textbf{unknown} order
+\end{itemize}
+
+\subsection{Mathematical Foundation of RSA}
+Let $N = p \cdot q$ be the product of two huge distinct prime.
+\\
+Then, $\mathbf{Z}_N^* = \{a \in \mathbf{Z}_N = \{0, \dots N-1\}: gcd(a,N) =1\}$
+\\
+We start with $\mathbf{Z}_N$ and throw out all multiples of $p$ $(0,p,2p, \dots , (q-1)p)$ and of $q$ $(0,q, \dots, (p-1)q)$ which would double count 0. 
+\vspace{10mm}
+
+\section{RSA Encryption}
+
+\lipsum
+
+%=============================================================================
+%=============================================================================
+
+\bibliographystyle{alpha}
+% Uncomment below if you have any references:
+%\bibliography{\jobname}
+
+%=============================================================================
+%=============================================================================
+
+\end{document}
