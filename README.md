@@ -5,4 +5,5 @@ This is a repository with some notes taken in the class. The following lectures 
     <li>lecture 20:  Elementary number theory: Abelian groups, cyclic groups, Diffie-Hellman key
 exchange Intro</li>
     <li>lecture 22: CPA security continued, El Gamal cryptosystem</li>
+    <li>lecture 23: RSA function and RSA encryption</li>
 </ul>
