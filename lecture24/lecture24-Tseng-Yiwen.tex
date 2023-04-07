@@ -24,16 +24,17 @@ Apply $RSA_{N,e}$ on a random $x \leftarrow \mathbf{Z}_N^*$. Then, we know $x$ i
 We first use a hash function on $x$ and encrypt message $m$:
 \[c = (y=RSA_{N,e}(x) = x^e \bmod N, H(x) \oplus m)\]  
 \\
-$Dec(sk=(N,d), c=(y,p))$: Compute $x=RSA_{N,d}(y) = y ^d \bmod N$ and output $H(x) \oplus p$
+$Dec(sk=(N,d), c=(y,p))$: Compute $x=RSA_{N,d}(y) = y ^d \bmod N$ and output $H(x) \oplus p$. This mechanism meets the correctness requirement.
 \\
 \textbf{Note}: Because $x$ is unknown, $H(x)$ would be close to completely unknown.
+\vspace{8mm}
+\\
+We also need to check security requirement of RSA.
 \\\\
-We need to check the correctness and security requirement of RSA:
-\begin{itemize}
-    \item Correctness\\
-            
-    \item CPA-Security\\
-\end{itemize}
+\textbf{CPA Security}: Hash function (really random like)
+\\
+A good hash function "practically behaves" like a uniform random function (a.k.a random oracle) e.g.
+
 \vspace{10mm}
 %=============================================================================
 %=============================================================================
