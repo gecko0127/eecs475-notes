@@ -815,10 +815,11 @@ INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/NewPXMI.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/stxscr.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/adobe/palatino/pplr7t.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/adobe/palatino/pplr8r.tfm
-INPUT ./rsa_signature.jpg
-INPUT ./rsa_signature.jpg
-INPUT rsa_signature.jpg
-INPUT ./rsa_signature.jpg
+INPUT ./better_approach.jpg
+INPUT ./better_approach.jpg
+INPUT better_approach.jpg
+INPUT ./better_approach.jpg
+INPUT ./better_approach.jpg
 INPUT /usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplsy.vf
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newpx/pxsys.tfm
 INPUT /usr/share/texlive/texmf-dist/fonts/tfm/public/newtx/txex-bar.tfm
