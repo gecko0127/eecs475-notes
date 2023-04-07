@@ -6,4 +6,5 @@ This is a repository with some notes taken in the class. The following lectures 
 exchange Intro</li>
     <li>lecture 22: CPA security continued, El Gamal cryptosystem</li>
     <li>lecture 23: RSA function and RSA encryption</li>
+    <li>lecture 24: Digital signatures, Modeling digital signatures, RSA signatures</li>
 </ul>
