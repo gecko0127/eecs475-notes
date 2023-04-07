@@ -18,11 +18,42 @@
 %=============================================================================
 %=============================================================================
 
-%\section{Introduction}
+\section{Continue on Better RSA Encryption Approach}
+Apply $RSA_{N,e}$ on a random $x \leftarrow \mathbf{Z}_N^*$. Then, we know $x$ is hard to recover from $y=RSA_{N,e}(x)$.
+\\
+We first use a hash function on $x$ and encrypt message $m$:
+\[c = (y=RSA_{N,e}(x) = x^e \bmod N, H(x) \oplus m)\]  
+\\
+$Dec(sk=(N,d), c=(y,p))$: Compute $x=RSA_{N,d}(y) = y ^d \bmod N$ and output $H(x) \oplus p$
+\\
+\textbf{Note}: Because $x$ is unknown, $H(x)$ would be close to completely unknown.
+\\\\
+We need to check the correctness and security requirement of RSA:
+\begin{itemize}
+    \item Correctness\\
+            
+    \item CPA-Security\\
+\end{itemize}
+\vspace{10mm}
+%=============================================================================
+%=============================================================================
+\section{Digital Signature}
 
 \vspace{10mm}
+%=============================================================================
+%=============================================================================
+\section{Modeling Digital Signature}
 
-\lipsum
+\vspace{10mm}
+%=============================================================================
+%=============================================================================
+\section{RSA Signature}
+
+\vspace{10mm}
+%=============================================================================
+%=============================================================================
+
+%\lipsum
 
 %=============================================================================
 %=============================================================================
