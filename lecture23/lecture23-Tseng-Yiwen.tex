@@ -25,13 +25,33 @@ In general public key encryption relies on some computational hardness for secur
     \item \textbf{RSA}: rely on the hardness of factoring and finding roots (finding \textbf{unkonwn base} but known exponent) in a group of \textbf{unknown} order
 \end{itemize}
 
-\subsection{Mathematical Foundation of RSA}
+\subsection{Mathematical Foundation of RSA Function}
 Let $N = p \cdot q$ be the product of two huge distinct prime.
 \\
 Then, $\mathbf{Z}_N^* = \{a \in \mathbf{Z}_N = \{0, \dots N-1\}: gcd(a,N) =1\}$
 \\
 We start with $\mathbf{Z}_N$ and throw out all multiples of $p$ $(0,p,2p, \dots , (q-1)p)$ and of $q$ $(0,q, \dots, (p-1)q)$ which would double count 0. 
+\\
+This means $|\mathbf{Z}_N^*| = \varphi(N) = p \cdot q - q -p +1 = (p-1)\cdot (q-1)$.
+\\
+\textbf{Euler's Theoreom}: In any group $G$, $\forall  a \in G$, $a^{|G|} = 1 \in G$. 
+Say $G = \mathbf{Z}_N^*$, $a^{\varphi(N)}=a^{(p-1)(q-1)} = 1 (\bmod N)$ 
+(Aruthmetic  mod N is "mod $\varphi(N)$" in the exponent)
+\\
+Take some $e$ such that $gcd(e,\varphi(N)) = 1$ (example: $e$ is prime such that $e \nmid (p-1)$, $e \nmid (q-1)$ this works)
+\\
+By Euclidean algorithm, we can compute integers $A$ and $B$, which are B\'{e}zout coefficients, such that $Ae+B\varphi(N) = 1$.
+\\
+\[\Rightarrow A \cdot e = 1 - B \varphi(N) = 1 (\bmod \varphi(N))\]
+Define $d = A \bmod \varphi(N)$ is the multiplicative inverse of $e \bmod \varphi(N)$: $d=e^{-1} (\bmod \varphi(N))$ and $d \cdot e = 1 (\bmod \varphi(N))$. (usually choose $e=3$)
 \vspace{10mm}
+
+\subsection{RSA Function}
+The choice of $N, e, d$ gives us the RSA function and its inverse.
+\\
+\textbf{Definition}: For $N=p \cdot q$ (large distinct primes p, q) and $e \in Z_{\varphi(N)}^*$ with $d = e^{-1} (\bmod \varphi(N))$, the RSA function $RSA _{N,e}: \mathbf{Z}_N^* \rightarrow \mathbf{Z}_N^*$ is a bijection and $RSA _{N,e}(x) = x^e \bmod N $.
+\\
+The inverse is $RSA _{N,d}(y) = RSA _{N,e}^{-1}(y) = y^d \bmod N  = x ^{ed (\bmod \varphi(N))} \bmod N = x ^1 = x \bmod N$
 
 \section{RSA Encryption}
 
