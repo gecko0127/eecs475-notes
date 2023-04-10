@@ -7,4 +7,5 @@ exchange Intro</li>
     <li>lecture 22: CPA security continued, El Gamal cryptosystem</li>
     <li>lecture 23: RSA function and RSA encryption</li>
     <li>lecture 24: Digital signatures, Modeling digital signatures, RSA signatures</li>
+    <li>lecture 25: Digital signatures, Identification Schemes, Schnorr's identification</li>
 </ul>
