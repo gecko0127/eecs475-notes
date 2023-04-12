@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  7 APR 2023 17:35
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  11 APR 2023 23:57
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
@@ -667,40 +667,40 @@ File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
 <rsa_encryption.jpg, id=4, 522.95375pt x 191.71625pt>
 File: rsa_encryption.jpg Graphic file (type jpg)
 <use rsa_encryption.jpg>
-Package pdftex.def Info: rsa_encryption.jpg  used on input line 38.
+Package pdftex.def Info: rsa_encryption.jpg  used on input line 36.
 (pdftex.def)             Requested size: 261.47623pt x 95.85788pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--40
+Underfull \hbox (badness 10000) in paragraph at lines 25--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--40
+Underfull \hbox (badness 10000) in paragraph at lines 25--38
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 41--47
+Underfull \hbox (badness 10000) in paragraph at lines 39--45
 
  []
 
 [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map} <./rsa_encryption.jpg>]
-Underfull \hbox (badness 10000) in paragraph at lines 48--53
+Underfull \hbox (badness 10000) in paragraph at lines 46--51
 
  []
 
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 54.
+LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 52.
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
 File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
 )
-Underfull \hbox (badness 10000) in paragraph at lines 63--66
+Underfull \hbox (badness 10000) in paragraph at lines 61--64
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 76--79
+Underfull \hbox (badness 10000) in paragraph at lines 74--77
 
  []
 
@@ -708,10 +708,10 @@ Underfull \hbox (badness 10000) in paragraph at lines 76--79
 <rsa_signature.jpg, id=19, 402.50375pt x 231.86626pt>
 File: rsa_signature.jpg Graphic file (type jpg)
 <use rsa_signature.jpg>
-Package pdftex.def Info: rsa_signature.jpg  used on input line 101.
+Package pdftex.def Info: rsa_signature.jpg  used on input line 99.
 (pdftex.def)             Requested size: 201.25137pt x 115.93283pt.
 
-Underfull \hbox (badness 10000) in paragraph at lines 104--111
+Underfull \hbox (badness 10000) in paragraph at lines 102--109
 
  []
 
@@ -719,11 +719,16 @@ Underfull \hbox (badness 10000) in paragraph at lines 104--111
 <better_approach.jpg, id=23, 467.7475pt x 332.24126pt>
 File: better_approach.jpg Graphic file (type jpg)
 <use better_approach.jpg>
-Package pdftex.def Info: better_approach.jpg  used on input line 119.
+Package pdftex.def Info: better_approach.jpg  used on input line 117.
 (pdftex.def)             Requested size: 233.87317pt x 166.12021pt.
 
-Overfull \hbox (0.88405pt too wide) in paragraph at lines 125--126
-[]$\OML/npxmi/m/it/10.95 Sign\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 s[] \U/npxmia/m/it/10.95 = \LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 N; d\LMS/npxsy/m/n/10.95 บ\OML/npxmi/m/it/10.95 ; m \LMS/npxsy/m/n/10.95 2 \OT1/ppl/b/n/10.95 Z[]\LMS/npxsy/m/n/10.95 บ$\OT1/ppl/m/n/10.95 : out-put $\OML/npxmi/m/it/10.95 ^^[ \U/npxmia/m/it/10.95 = \OML/npxmi/m/it/10.95 RSA[]N; d\LMS/npxsy/m/n/10.95 บน\OML/npxmi/m/it/10.95 H\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 m\LMS/npxsy/m/n/10.95 บบ \U/npxmia/m/it/10.95 = \OML/npxmi/m/it/10.95 H\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 m\LMS/npxsy/m/n/10.95 บ[]  []  \OML/npxmi/m/it/10.95 N \U/npxmia/m/it/10.95 = \OML/npxmi/m/it/10.95 RSA[]\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 H\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 m\LMS/npxsy/m/n/10.95 บบ$ 
+Overfull \hbox (8.13628pt too wide) in paragraph at lines 123--124
+[]$\OML/npxmi/m/it/10.95 Sign\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 s[] \U/npxmia/m/it/10.95 = \LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 N; d\LMS/npxsy/m/n/10.95 บ\OML/npxmi/m/it/10.95 ; m \LMS/npxsy/m/n/10.95 2 f\OT1/ppl/m/n/10.95 0\OML/npxmi/m/it/10.95 ; \OT1/ppl/m/n/10.95 1\LMS/npxsy/m/n/10.95 g[]บ$\OT1/ppl/m/n/10.95 : out-put $\OML/npxmi/m/it/10.95 ^^[ \U/npxmia/m/it/10.95 = \OML/npxmi/m/it/10.95 RSA[]\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 H\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 m\LMS/npxsy/m/n/10.95 บบ \U/npxmia/m/it/10.95 = \OML/npxmi/m/it/10.95 H\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 m\LMS/npxsy/m/n/10.95 บ[]  []  \OML/npxmi/m/it/10.95 N \U/npxmia/m/it/10.95 = \OML/npxmi/m/it/10.95 RSA[]\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 H\LMS/npxsy/m/n/10.95 น\OML/npxmi/m/it/10.95 m\LMS/npxsy/m/n/10.95 บบ$ 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 126--132
+
  []
 
 [4 <./better_approach.jpg>] (./lecture24-Tseng-Yiwen.aux) ) 
@@ -736,7 +741,7 @@ Here is how much of TeX's memory you used:
  1141 hyphenation exceptions out of 8191
  99i,8n,94p,469b,282s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on lecture24-Tseng-Yiwen.pdf (4 pages, 125979 bytes).
+Output written on lecture24-Tseng-Yiwen.pdf (4 pages, 126927 bytes).
 PDF statistics:
  54 PDF objects out of 1000 (max. 8388607)
  32 compressed objects within 1 object stream

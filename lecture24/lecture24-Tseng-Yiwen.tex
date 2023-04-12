@@ -19,33 +19,31 @@
 %=============================================================================
 
 \section{Continue on Better RSA Encryption Approach}
-Apply $RSA_{N,e}$ on a random $x \leftarrow \mathbf{Z}_N^*$. Then, we know $x$ is hard to recover from $y=RSA_{N,e}(x)$.
+Apply $RSA_{N,e}$ on a random $x \leftarrow \mathbf{Z}_N^*$, and we know $x$ is hard to recover from $y=RSA_{N,e}(x)$.
 \\
-We first use a hash function on $x$ and encrypt message $m$:
-\[c = (y=RSA_{N,e}(x) = x^e \bmod N, H(x) \oplus m)\]  
+We then apply a hash function on $x$ and encrypt message $m$ by XOR-ing message $m$ with the hashed value as follows:
+\[c = (y,p) = (y=RSA_{N,e}(x) = x^e \bmod N\text{, }H(x) \oplus m)\]  
 \\
 $Dec(sk=(N,d), c=(y,p))$: Compute $x=RSA_{N,d}(y) = y ^d \bmod N$ and output $H(x) \oplus p$. This mechanism meets the correctness requirement.
 \vspace{8mm}
 \\
-We also need to check security requirement of RSA.
+We also need to check security requirement of RSA encryption.
 \\\\
-\textbf{CPA Security}: Hash function (really random like)
-\\
-A good hash function "practically behaves" like a uniform random function (a.k.a random oracle) e.g. SHA-3 is quite "random-like"
+\textbf{CPA Security}: A good hash function "practically behaves" like a uniform random function (a.k.a random oracle) e.g. SHA-3 is quite "random-like"
 \\
 \begin{figure}[H]
     \centering
     \includegraphics[scale=0.5]{rsa_encryption.jpg}
     \caption{RSA Encryption}
 \end{figure}
-\noindent Because $x$ is unknown, $H(x)$ would be close to completely unknown. Thus, it is stronger than collision resistance. In the other words, because x is not fully known to the adversary, $H(x)$ is completely random. On the other hand, if the adversary knows $x$, then they also completely know $H(x)$.
+\noindent Because $x$ is unknown, $H(x)$ would be close to completely unknown. Thus, it is stronger than collision resistance. In the other words, because x is not fully known to the adversary, $H(x)$ is completely random. On the other hand, if the adversary knows $x$, then they will completely know $H(x)$.
 \\\\
 \textbf{Theorem}: If RSA assumption holds (factoring is hard) and $H$ is a "random oracle," then RSA encryption is CPA secure. 
 \vspace{10mm}
 %=============================================================================
 %=============================================================================
 \section{Digital Signature}
-In Diffie-Hellmen, we solve the encryption problem, but there is still integrity problem. The good news is RSA can be used in both encryption and integrity, which is referred to as \textbf{digital signature}.
+In Diffie-Hellmen, we solve the encryption problem, but there is still integrity problem. The good news is RSA can be used in both encryption and integrity, which is referred as \textbf{digital signature}.
 \\\\
 Digital signature can help us authenticating the identiy of the sender under public key setting.
 \\
@@ -54,7 +52,7 @@ For example,
     \item A person's ID should be verifiable as authentication by everyone (attested by the governments)
     \item Crypto wallet
     \item A financial digital contract
-    \item signed email
+    \item Signed email
 \end{itemize}
 \vspace{10mm}
 %=============================================================================
@@ -66,7 +64,7 @@ Signature scheme: $\pi = (Gen, Sign, Ver)$ with interface:
 \begin{itemize}
     \item $Gen(1^n)$: Output a (public) verification key $v_k$ and a (secret) signing key $s_k$
     \item $Sign(s_k,m)$: Given signing key $s_k$ and message $m$, output signature $\sigma$
-    \item $Ver(v_k,m,\sigma)$: Given verification key message $m$,  purported signature $\sigma$, accept or reject
+    \item $Ver(v_k,m,\sigma)$: Given verification key $v_k$, message $m$,  purported signature $\sigma$, accept or reject
 \end{itemize}
 \vspace{5mm}
 We need to check the correctness and the security of RSA digital signature:
@@ -75,14 +73,14 @@ We need to check the correctness and the security of RSA digital signature:
             $\forall (v_k,s_k) \leftarrow Gen(1^n)$, $\forall m, Ver(v_k,m,Sign(s_k,m))=\text{ always accept}$
     \item Security\\
             We need to show that the digital signature is unforgeable under Chosen Message Attack (CMA game).\\\\
-            \textbf{Definition}: A sign scheme $\pi = (Gen,Sign,Ver)$ is UFCMA if $\forall \text{ p.p.t forger} F$:
-            \[Adv_{\pi}^{CMA} = \Pr_{(v_k,s_k) \leftarrow Gen(1^n)}(F^{Sign_{s_k}(.)}(1^n,v_k) \text{ forges}) = negl(n) \]
+            \textbf{Definition}: A sign scheme $\pi = (Gen,Sign,Ver)$ is UFCMA if $\forall \text{ p.p.t forger } F$:
+            \[Adv_{\pi}^{CMA}(F) = \Pr_{(v_k,s_k) \leftarrow Gen(1^n)}(F^{Sign_{s_k}(.)}(1^n,v_k) \text{ forges}) = negl(n) \]
             where forging means outputing $(m^*,\sigma^*)$ such that:
             \begin{enumerate}
                 \item $Ver(v_k,m^*,\sigma^*) = $ accept
-                \item $m^*$ wasn't a query to the $Sign_{s_k}(.)$ oracle
+                \item $m^*$ was not a query to the $Sign_{s_k}(.)$ oracle
             \end{enumerate}
-            For "strong" unforgeability, we relax the second criteria to be $(m^*,\sigma^*)$ wasn't a query-answer pair.  
+            For "strong" unforgeability, we relax the second criteria to be $(m^*,\sigma^*)$ was not a query-answer pair.  
 \end{itemize}
 
 \vspace{10mm}
@@ -93,7 +91,7 @@ RSA Signature is literally the reverse of RSA encryption.
 \subsection{Textbook Version of RSA Signature}
 \begin{itemize}
     \item $Gen(1^n)$: run $(N,e,d) \leftarrow GenRSA(1^n)$, output $v_k = (N,e)$ and $s_k = (N,d)$
-    \item $Sign(s_k=(N,d), m \in \mathbf{Z}_N^*)$: output $\sigma = RSA_(N,d)(m) = m^d \bmod N = RSA_{(N,e)}^{-1}(m)$
+    \item $Sign(s_k=(N,d), m \in \mathbf{Z}_N^*)$: output $\sigma = RSA_{(N,d)}(m) = m^d \bmod N = RSA_{(N,e)}^{-1}(m)$
     \item $Ver(v_k=(N,e), m \in \mathbf{Z}_N^*, \sigma \in \mathbf{Z}_N^*)$: accept if and only if $m=RSA_{N,e}(\sigma) = \sigma^e \bmod N$, else reject
 \end{itemize}
 \begin{figure}[H]
@@ -103,7 +101,7 @@ RSA Signature is literally the reverse of RSA encryption.
 \end{figure}
 The mechanism meets the correctness requirement, but it is not unforgeable. 
 \\
-In fact, it is forgeable with zero queries. The forger first choose any $\sigma^* \in \mathbf{Z}_N^*$ and compute $m^* = RSA_{(N,e)}(\sigma^*) = (\sigma^*)^e \bmod N$. Then, it outputs $(m^*, \sigma^*)$ to the verifier.
+In fact, it is forgeable with zero queries. The forger first choose any $\sigma^* \in \mathbf{Z}_N^*$ and compute $m^* = RSA_{(N,e)}(\sigma^*) = (\sigma^*)^e \bmod N$. Then, it outputs $(m^*, \sigma^*)$ to the verifier (because $e$ is public).
 \\\\
 A more threatening forgery can work as follows:
 The forger qeuries two times to get $(m, \sigma)$ and $(m^{'},\sigma^{'})$.
@@ -122,12 +120,12 @@ We can check the signature:
 Similar to RSA Encryption, we use a collision resistant hash function $H$ to introduce randomness.
 \begin{itemize}
     \item $Gen(1^n)$: run $(N,e,d) \leftarrow GenRSA(1^n)$, output $v_k = (N,e)$ and $s_k = (N,d)$
-    \item $Sign(s_k=(N,d), m \in \mathbf{Z}_N^*)$: output $\sigma = RSA_(N,d)(H(m)) = H(m)^d \bmod N = RSA_{(N,e)}^{-1}(H(m))$
-    \item $Ver(v_k=(N,e), m \in \mathbf{Z}_N^*, \sigma \in \mathbf{Z}_N^*)$: accept if and only if $H(m) = \sigma^e \bmod N  = RSA_{N,e}(\sigma)$
+    \item $Sign(s_k=(N,d), m \in \{0,1\}^*)$: output $\sigma = RSA_{(N,d)}(H(m)) = H(m)^d \bmod N = RSA_{(N,e)}^{-1}(H(m))$
+    \item $Ver(v_k=(N,e), m \in \{0,1\}^*, \sigma \in \mathbf{Z}_N^*)$: accept if and only if $H(m) = \sigma^e \bmod N  = RSA_{N,e}(\sigma)$
 \end{itemize}
-\textbf{Theorem}: Under RSA assumption, this "hash and sign" signature is UFCMA if $H$ is modeled as a "random oracle" eahc query $(m_i, \sigma_i)$ is distributed like random. In other words, $H(m_i) = \sigma_i^e \bmod N$ for random $\sigma_i$ tells forger nothing.
-\\
-\textbf{Caveat}: For real functions, $H:{0,1}^* \rightarrow \mathbf{Z}_N^*$ should "cover" all of $\mathbf{Z}_N^*$. For instance, SHA-3 gets 256-bit outputs, but RSA needs 4096-bit module. To make hash longer, we use "repeated hashing."
+\textbf{Theorem}: Under RSA assumption, this "hash and sign" signature is UFCMA if $H$ is modeled as a "random oracle", and each query $(m_i, \sigma_i)$ is distributed like random. In other words, $H(m_i) = \sigma_i^e \bmod N$ for random $\sigma_i$, which tells forger nothing.
+\\\\
+\textbf{Caveat}: For real functions, $H:\{0,1\}^* \rightarrow \mathbf{Z}_N^*$ should "cover" all of $\mathbf{Z}_N^*$. For instance, SHA-3 gets 256-bit outputs, but RSA needs 4096-bit module. To make hash longer, we use "repeated hashing."
 \vspace{10mm}
 %=============================================================================
 %=============================================================================
@@ -145,3 +143,4 @@ Similar to RSA Encryption, we use a collision resistant hash function $H$ to int
 %=============================================================================
 
 \end{document}
+
