@@ -8,4 +8,5 @@ exchange Intro</li>
     <li>lecture 23: RSA function and RSA encryption</li>
     <li>lecture 24: Digital signatures, Modeling digital signatures, RSA signatures</li>
     <li>lecture 25: Digital signatures, Identification Schemes, Schnorr's identification</li>
+    <li>lecture 26: Post-quantum and lattice-based cryptography</li>
 </ul>
