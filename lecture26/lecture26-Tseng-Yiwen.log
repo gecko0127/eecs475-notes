@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  13 APR 2023 14:37
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (TeX Live 2022/dev/Debian) (preloaded format=pdflatex 2023.3.23)  13 APR 2023 15:23
 entering extended mode
  \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**/home/yiwent/eecs475/notes/lecture25/lecture25-Tseng-Yiwen.tex
-(/home/yiwent/eecs475/notes/lecture25/lecture25-Tseng-Yiwen.tex
+**/home/yiwent/eecs475/notes/lecture26/lecture26-Tseng-Yiwen.tex
+(/home/yiwent/eecs475/notes/lecture26/lecture26-Tseng-Yiwen.tex
 LaTeX2e <2021-11-15> patch level 1
 L3 programming layer <2022-01-21> (./scribe.cls
 Document Class: scribe 2022/09/01 Template for 2022-2023 scribe notes
@@ -588,8 +588,8 @@ Package: float 2001/11/08 v1.3d Float enhancements (AL)
 LaTeX Font Info:    Trying to load font information for OT1+ppl on input line 14.
  (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1ppl.fd
 File: ot1ppl.fd 2001/06/04 font definitions for OT1/ppl.
-) (./lecture25-Tseng-Yiwen.aux)
-\openout1 = `lecture25-Tseng-Yiwen.aux'.
+) (./lecture26-Tseng-Yiwen.aux)
+\openout1 = `lecture26-Tseng-Yiwen.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/npxmi/m/it on input line 14.
 LaTeX Font Info:    Trying to load font information for OML+npxmi on input line 14.
@@ -643,50 +643,22 @@ Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
 Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
  (/usr/share/texlive/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
 File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
-))
-Underfull \hbox (badness 10000) in paragraph at lines 21--26
+)) [1
 
- []
-
-LaTeX Font Info:    Trying to load font information for U+msa on input line 31.
-(/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
-File: umsa.fd 2013/01/14 v3.01 AMS symbols A
-)
-LaTeX Font Info:    Trying to load font information for U+msb on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
-File: umsb.fd 2013/01/14 v3.01 AMS symbols B
-)
-LaTeX Font Info:    Trying to load font information for U+npxmia on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxmia.fd
-File: unpxmia.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxmia.
-)
-LaTeX Font Info:    Trying to load font information for U+npxsym on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsym.fd
-File: unpxsym.fd 2015/03/21 Fontinst v1.933 font definitions for U/npxsym.
-)
-LaTeX Font Info:    Trying to load font information for U+npxsyc on input line 31.
- (/usr/share/texlive/texmf-dist/tex/latex/newpx/unpxsyc.fd
-File: unpxsyc.fd 2013/03/24 Fontinst v1.933 font definitions for U/npxsyc.
-)
-LaTeX Font Info:    Trying to load font information for TS1+ppl on input line 37.
- (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ts1ppl.fd
-File: ts1ppl.fd 2001/06/04 font definitions for TS1/ppl.
-) [1
-
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3] (./lecture25-Tseng-Yiwen.aux) ) 
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] (./lecture26-Tseng-Yiwen.aux) ) 
 Here is how much of TeX's memory you used:
- 19248 strings out of 478287
- 383411 string characters out of 5849289
- 757040 words of memory out of 5000000
- 37048 multiletter control sequences out of 15000+600000
- 492839 words of font info for 89 fonts, out of 8000000 for 9000
+ 19111 strings out of 478287
+ 381249 string characters out of 5849289
+ 749980 words of memory out of 5000000
+ 36959 multiletter control sequences out of 15000+600000
+ 475584 words of font info for 41 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 99i,6n,94p,469b,198s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on lecture25-Tseng-Yiwen.pdf (3 pages, 77149 bytes).
+ 99i,5n,94p,469b,141s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on lecture26-Tseng-Yiwen.pdf (1 page, 38858 bytes).
 PDF statistics:
- 53 PDF objects out of 1000 (max. 8388607)
- 33 compressed objects within 1 object stream
+ 22 PDF objects out of 1000 (max. 8388607)
+ 14 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  13 words of extra memory for PDF output out of 10000 (max. 10000000)
 
